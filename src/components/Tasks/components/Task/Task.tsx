@@ -1,6 +1,6 @@
 import { Checkbox } from "@/components/ui/checkbox"
 import { FC } from "react"
-import { TypeTask } from "@/store/types"
+import { TypeTask } from "@/types/types"
 import { useTodoStore } from "@/store/useTodoStore"
 
 export const Task:FC<TypeTask> = ({

@@ -1,6 +1,5 @@
 import AddTask from "./components/AddTask"
 import Task from "./components/Task"
-import { TypeTask } from "@/store/types"
 import { useTodoStore } from "@/store/useTodoStore"
 
 export const Tasks = () => {
@@ -15,7 +14,7 @@ export const Tasks = () => {
                 {filteredTasks.length === 0 ? (
                     <li>Задач пока нет! Добавьте свою первую задачу!</li>
                 ) : (
-                    filteredTasks.map((task: TypeTask) => {
+                    filteredTasks.map((task) => {
                         const { id, text, completed } = task
                         return (
                             <div key={id}>
